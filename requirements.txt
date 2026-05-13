@@ -1,0 +1,29 @@
+# Core Python libraries
+streamlit
+langchain
+langchain-community
+langchain-core
+langchain-text-splitters
+
+# Whisper (local transcription)
+openai-whisper
+
+# Translation (Hindi → English)
+googletrans==4.0.0-rc1
+
+# Mistral API (via HuggingFace or direct)
+mistralai
+
+# Vector DB + Embeddings
+chromadb
+sentence-transformers
+huggingface-hub
+
+# PDF/TXT export
+fpdf
+reportlab
+
+# Utilities
+pydub        # audio handling
+yt-dlp       # YouTube audio download
+python-dotenv # environment variables
