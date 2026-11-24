@@ -23,7 +23,7 @@ requirements.txt           dependencies
 
 ## Setup
 
-You need Python 3.10 or newer and [ffmpeg](https://ffmpeg.org) installed (used by `yt-dlp` and `pydub`).
+You need Python 3 (tested on 3.10) and [ffmpeg](https://ffmpeg.org) installed (used by `yt-dlp` and `pydub`).
 
 ```bash
 python -m venv .venv
@@ -32,7 +32,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-Set the `WHISPER_MODEL` environment variable to pick a Whisper model size. The default is `base`. Audio is saved in the `downloades/` folder, which is git-ignored.
+Set the `WHISPER_MODEL` environment variable to pick a Whisper model size. The default is `base`. YouTube audio is downloaded into the `downloades/` folder, which is git-ignored. For a local file, the converted WAV and its chunks are written next to the original file.
 
 ## Status
 
