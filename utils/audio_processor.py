@@ -49,7 +49,7 @@ def chunk_audio(wav_path:str ,chunk_minutes:int=10)->list:
     Return list of file paths for each chunk.
     """
     audio=AudioSegment.from_wav(wav_path)
-    chunk_ms=chunk_minutes *60*1000
+    chunk_ms=int(chunk_minutes * 60 * 1000)
     chunks=[]
     for i ,start in enumerate(range(0,len(audio),chunk_ms)):
         chunk=audio[start:start+chunk_ms]
